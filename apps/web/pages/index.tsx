@@ -1,6 +1,7 @@
+import type { NextPage } from 'next'
 import { Button } from 'ui'
 
-export default function Web() {
+const Home: NextPage = () => {
   return (
     <div>
       <h1>Web</h1>
@@ -8,3 +9,5 @@ export default function Web() {
     </div>
   )
 }
+
+export default Home
