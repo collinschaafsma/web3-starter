@@ -17,6 +17,7 @@
     "turbo": "latest"
   },
   "turbo": {
+    "baseBranch": "origin/main",
     "pipeline": {
       "build": {
         "dependsOn": [
