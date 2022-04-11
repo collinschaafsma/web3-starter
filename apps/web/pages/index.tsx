@@ -1,6 +1,6 @@
 import { useWeb3React } from '@web3-react/core'
 import type { NextPage } from 'next'
-import { Button } from 'ui'
+import MetaMaskDialog from '../components/connectors/MetaMaskDialog'
 
 const Home: NextPage = () => {
   const { connector } = useWeb3React()
@@ -8,8 +8,10 @@ const Home: NextPage = () => {
 
   return (
     <div>
-      <h1>Web</h1>
-      <Button />
+      <h1>Web App</h1>
+      <div style={{ display: 'flex', flexFlow: 'wrap', fontFamily: 'sans-serif' }}>
+        <MetaMaskDialog />
+      </div>
     </div>
   )
 }
